@@ -7,6 +7,7 @@ const styles = theme => ({
     
     buscador: {
         margin: '5px',
+        padding: '2em',
     },
 
     buscadorPrincipal: {
@@ -18,18 +19,16 @@ const styles = theme => ({
         marginRight: theme.spacing(1),
         
     },
-    container: {
-        display: 'flex',
-    }
 
 })
 
 export class Buscador extends Component {
+
     render() {
         const { classes } = this.props;
         return (
             <div>
-            <div className={classes.buscador}>
+                <div className={classes.buscador}>
                     <div className={classes.buscadorTitle}>
                         <h2>Buscador de producciones</h2>
                     </div>
@@ -46,11 +45,31 @@ export class Buscador extends Component {
                                     
                                     variant="outlined"
                                 />
-                                <Button color="primary"><i class="material-icons">search</i></Button>                                
+                                <Button color="primary"><i className="material-icons">search</i></Button>                                
                             </form>
                         </div>
-                        <div className={classes.buscadorSegundaColumna}></div>
-                        <div className={classes.buscadorTerceraColumna}></div>
+                      
+                        <div className={classes.buscadorSegundaColumna} noValidate autoComplete="off">
+                        <TextField
+                                    id="outlined-word"
+                                    label="Autor"
+                                    className={classes.textField}
+                                    
+                                    variant="outlined"
+                                />
+                                <Button color="primary"><i className="material-icons"> search </i></Button> 
+                        </div>
+                      
+                        <div className={classes.buscadorTerceraColumna} noValidate autoComplete="off">
+                        <TextField
+                                    id="outlined-word"
+                                    label="Género"
+                                    className={classes.textField}
+                                    
+                                    variant="outlined"
+                                />
+                                <Button color="primary"><i className="material-icons">search</i></Button> 
+                        </div>
                     </div>
 
                 </div>

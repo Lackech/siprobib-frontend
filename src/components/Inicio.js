@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import banner from '../images/banner.jpg';
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 import theme from './theme';
 import ThemeProvider from '@material-ui/styles/ThemeProvider';
-import { Buscador } from './Buscador';
+import  Buscador  from './Buscador';
 
 const styles = theme => ({
 
@@ -22,7 +22,6 @@ const styles = theme => ({
             left: 0,
             width: '100%',
             height: '100%',
-            //background: 'url(public/banner.jpeg)',
             backgroundImage: "url(" + banner + ")",
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
@@ -73,7 +72,6 @@ const styles = theme => ({
 
 export class Inicio extends Component {
 
-
     render() {
         const { classes } = this.props;
         return (
@@ -82,7 +80,7 @@ export class Inicio extends Component {
                     <section className={classes.hero}>
                         <div className={classes.heroContent}>
                             <h1 className={classes.heroTitle}>
-                                Sistema de producciones bibliograficas
+                                Sistema de Producciones Bibliográficas
                             </h1>
 
                             <h2 className={classes.heroSubtitle}>
@@ -93,7 +91,6 @@ export class Inicio extends Component {
                     </section>
 
                     <Buscador />
-
 
                 </div>
             </ThemeProvider>

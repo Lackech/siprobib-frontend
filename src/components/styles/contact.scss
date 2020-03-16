@@ -1,0 +1,57 @@
+.wrapperContact {
+
+    padding-top: 7em;
+
+    .content {
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+  
+      h1 {
+        font-family: 'Century Gothic', sans-serif;
+        font-weight: bold;
+        color: #000000;
+        font-size: 310%;
+        text-shadow: 0 0 300px #000;
+      }
+  
+      p {
+        font-family: 'Century Gothic', sans-serif;
+        color: #000000;
+        font-size: 110%;
+      }
+      
+    } 
+  
+    .imgCnt{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      
+      .a1{
+        grid-column: 2;
+        justify-self: center;
+        .img{
+          height: 50px;
+          width: 50px;
+        }
+      }
+  
+      .a2{
+        grid-column: 3;
+        justify-self: center;
+        .img1{
+          height: 50px;
+          width: 50px;
+        }
+      }
+  
+      .a3{
+        grid-column: 4;
+        justify-self: center;
+        .img2{
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+  }
